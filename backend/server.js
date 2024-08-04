@@ -15,13 +15,17 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static files from the 'uploads' directory
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-
 // Configure CORS
 app.use(cors({
   origin: '*', // Your frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
+
+// Welcome route
+app.get('/', (req, res) => {
+  res.send('Welcome to my API');
+});
 
 // Use routes
 app.use('/api/cars', carRoutes);
