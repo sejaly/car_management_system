@@ -21,7 +21,7 @@ const Signup = ({ setUser }) => {
         role
       };
 
-      const response = await axios.post('http://localhost:5000/api/auth/register', userData);
+      const response = await axios.post('https://car-management-system-6nrm.onrender.com/api/auth/register', userData);
       const { token } = response.data;
 
       // Store token in localStorage
