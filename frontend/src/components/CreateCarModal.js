@@ -21,7 +21,7 @@ const CreateCarModal = ({ onCarAdded, onClose }) => {
     if (image) formData.append('image', image);
 
     try {
-      await axios.post('http://localhost:5000/api/cars', formData, {
+      await axios.post('https://car-management-system-6nrm.onrender.com/api/cars', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
