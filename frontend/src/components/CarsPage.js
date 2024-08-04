@@ -11,7 +11,7 @@ const CarsPage = () => {
   // Fetch cars data from the server
   const fetchCars = async (page) => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/cars?page=${page}&limit=${carsPerPage}`);
+      const response = await axios.get(`https://car-management-system-6nrm.onrender.com/api/cars?page=${page}&limit=${carsPerPage}`);
       setCars(response.data.cars);
       setTotalCount(response.data.totalCount);
     } catch (err) {
