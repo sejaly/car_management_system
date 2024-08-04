@@ -8,7 +8,7 @@ const TotalCars = () => {
   useEffect(() => {
     const fetchTotalCars = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/cars/count');
+        const response = await axios.get('https://car-management-system-6nrm.onrender.com/api/cars/count');
         setTotal(response.data.total);
       } catch (err) {
         setError('Failed to fetch total cars');
