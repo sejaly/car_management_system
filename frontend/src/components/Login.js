@@ -12,7 +12,7 @@ const Login = ({ setUser }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const response = await axios.post('https://car-management-system-6nrm.onrender.com/api/auth/login', { email, password });
       const { token, user } = response.data;
 
       // Store token in localStorage
