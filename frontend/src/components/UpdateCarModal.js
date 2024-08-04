@@ -13,7 +13,7 @@ const UpdateCarModal = ({ carId, onCarUpdated, onClose }) => {
   useEffect(() => {
     const fetchCar = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/cars/${carId}`);
+        const response = await axios.get(`https://car-management-system-6nrm.onrender.com/api/cars/${carId}`);
         setCar(response.data);
         setName(response.data.name);
         setModel(response.data.model);
