@@ -17,7 +17,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Configure CORS
 app.use(cors({
-  origin: 'https://car-management-systems.onrender.com', // Your frontend URL
+  origin: '*', // Your frontend URL
   
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
