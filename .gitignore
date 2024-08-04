@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# npm package-lock
+package-lock.json
+
+# Yarn
+yarn.lock
+
+# IDE files
+.idea/
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Misc
+*.cache
+*.pid
+*.seed
+*.sublime-project
+*.sublime-workspace
