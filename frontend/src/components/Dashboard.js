@@ -22,7 +22,7 @@ const Dashboard = () => {
         return;
       }
 
-      const response = await axios.get(`http://localhost:5000/api/cars?page=${page}&limit=${carsPerPage}`, {
+      const response = await axios.get(`https://car-management-system-6nrm.onrender.com/api/cars?page=${page}&limit=${carsPerPage}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
 
